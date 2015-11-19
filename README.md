@@ -49,12 +49,6 @@ To install, append the aliases in config/app.php with
 ```php
 'Mailjet'   => 'Prspace\Mailjet\Facades\Mailjet',
 ```
-    
-To use the API in your code, add 
-```php 
-use Mailjet;
-```
-
 ### Examples
 _Based on https://github.com/mailjet/mailjet-apiv3-php-simple/blob/master/README.md_
 
