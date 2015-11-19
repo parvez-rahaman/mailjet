@@ -1,17 +1,17 @@
-# Laravel 5 Mailjet Integration #
+# Laravel 4 Mailjet Integration #
 
-- **Laravel**: 5
-- **Author**: Ramon Ackermann
-- **Author Homepage**: https://github.com/sboo
+- **Laravel**: 4
+- **Author**: Parvez Rahaman
+- **Author Homepage**: https://github.com/prspace
 
-This package extends the Laravel 5 MailService to enable Mailjet integration, based on Mailjet API v3.
+This package extends the Laravel 4 MailService to enable Mailjet integration, based on Mailjet API v3.
 
 ## Installation ##
 
 Firstly you want to include this package in your composer.json file.
 ```javascript
 "require": {
-    "sboo/laravel5-mailjet" : "1.0.*"
+    "prspace/mailjet" : "1.0.*"
 }
 ```
     
@@ -22,7 +22,7 @@ composer update
 
 Next you open up app/config/app.php and replace the MailServiceProvider with
 ```php
-'Sboo\Laravel5Mailjet\MailjetServiceProvider'
+'Prspace\Mailjet\MailjetServiceProvider'
 ```
 
 **NOTE** It is very important that you replace the default service providers to avoid conflicts. You don't lose any original functionality regarding mail drivers, they are still available.
@@ -39,7 +39,7 @@ And replace the values with your respective api key and secret key.
 
 Next, change the mail driver in your config/mail.php or your .env file to 'mailjet', and make sure you have a valid and authorised from-address configured.
 
-That's all and you're good to go. For usage, check the [Laravel 5 mail documentation](http://laravel.com/docs/5.0/mail)
+That's all and you're good to go. For usage, check the [Laravel 4 mail documentation](http://laravel.com/docs/4.0/mail)
 
 ##API access##
 
@@ -47,7 +47,7 @@ I have also integrated direct access to Mailtjet's API, based on their [example 
 
 To install, append the aliases in config/app.php with
 ```php
-'Mailjet'   => 'Sboo\Laravel5Mailjet\Facades\Mailjet',
+'Mailjet'   => 'Prspace\Mailjet\Facades\Mailjet',
 ```
     
 To use the API in your code, add 
