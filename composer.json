@@ -1,7 +1,7 @@
 {
     "name": "prspace/mailjet",
-    "description": "Mailjet driver for Laravel 4",
-    "keywords": ["laravel", "laravel 4", "mailjet", "api", "v3"],
+    "description": "Mailjet driver for Laravel",
+    "keywords": ["laravel", "laravel", "mailjet", "api", "v3"],
     "license": "MIT",
     "authors": [
         {
